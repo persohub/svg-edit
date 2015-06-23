@@ -156,10 +156,10 @@ var supportsNativeSVGTransformLists_ = (function() {
 // Public API
 
 svgedit.browser.isOpera = function() { return isOpera_; };
-svgedit.browser.isWebkit = function() { return isWebkit_; };
+svgedit.browser.isWebkit = function() { return false; return isWebkit_; };
 svgedit.browser.isGecko = function() { return isGecko_; };
-svgedit.browser.isIE = function() { return isIE_; };
-svgedit.browser.isChrome = function() { return isChrome_; };
+svgedit.browser.isIE = function() { return true; return isIE_; };
+svgedit.browser.isChrome = function() { return false; return isChrome_; };
 svgedit.browser.isWindows = function() { return isWindows_; };
 svgedit.browser.isMac = function() { return isMac_; };
 svgedit.browser.isTouch = function() { return isTouch_; };
